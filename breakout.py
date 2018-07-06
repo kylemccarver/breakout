@@ -136,7 +136,7 @@ def main():
                     bricks = generateBricks()
                     reset(playerRect, ball)
                     ballInPlay = False
-                    ball["speed"] += 2
+                    ball["speed"] += 1
 
                 
             # Draw
@@ -153,6 +153,7 @@ def main():
         showGameOver(score)
         score = 0
         lives = 5
+        ball["speed"] = 3
         bricks = generateBricks()
 
 def terminate():
